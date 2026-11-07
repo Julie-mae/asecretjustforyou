@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>A Little Confession | Just For You</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- DECORATIVE BACKGROUND -->
+  <div class="background-glow" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ========================= -->
+    <!-- PAGE 1: WELCOME           -->
+    <!-- ========================= -->
+
+    <section class="story-page active-page"
+             id="page1">
+
+      <div class="page-content welcome-content">
+
+        <p class="eyebrow">
+          A LITTLE SOMETHING FOR YOU
+        </p>
+
+        <h1 class="main-heading">
+          Hello, Mark!.
+        </h1>
+
+        <p class="intro-text">
+          There's something I've been wanting
+          to tell you for a while...
+        </p>
+
+        <!-- DECORATIVE ENVELOPE -->
+        <div class="welcome-envelope"
+             aria-hidden="true">
+
+          <div class="welcome-flap"></div>
+          <div class="welcome-front"></div>
+          <div class="welcome-seal">♡</div>
+
+        </div>
+
+        <button class="primary-button"
+                data-page="2">
+
+          A Little Something For You
+          <span>→</span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- PAGE 2: FIRST LETTER      -->
+    <!-- ========================= -->
+
+    <section class="story-page"
+             id="page2">
+
+      <div class="page-content">
+
+        <p class="eyebrow">
+          A LETTER FOR YOU
+        </p>
+
+        <h2 class="page-heading">
+          Dear You,
+        </h2>
+
+        <p class="page-description">
+          Some feelings are easier to write
+          than to say out loud.
+        </p>
+
+        <!-- INTERACTIVE ENVELOPE -->
+        <div class="letter-scene">
+
+          <button class="interactive-envelope"
+                  id="firstEnvelope"
+                  aria-label="Open your first letter"
+                  aria-expanded="false">
+
+            <span class="envelope-back"></span>
+            <span class="envelope-paper">
+              a simple confession with a genuine feelings ♡
+            </span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-front"></span>
+            <span class="envelope-seal">♡</span>
+
+          </button>
+
+        </div>
+
+        <p class="tap-hint" id="firstHint">
+          Tap the envelope to open your letter
+        </p>
+
+        <!-- HIDDEN LETTER -->
+        <div class="letter-reveal"
+             id="firstLetter"
+             hidden>
+
+          <article class="letter-paper">
+
+            <p class="letter-greeting">
+              Dear Mark,
+            </p>
+            
+            <p>
+             Before anything else and before reading my confession read this first charott..
+             So ayun nga sinasabi ko toh kasi alam kong sa rejection ang tuloy nito and i accepting it wholeheartedly
+             without any  charr lang okay lang naman if i reject mo well sino ba naman ako haha chozz basta ganon and sana maging happy ka
+             soon sa taong pipiliin mo :)
+            </p>
+
+            <p>
+             I don't really know how to start this,
+              but I guess some feelings are better 
+              expressed through words than kept hidden forever.
+        
+            </p>
+
+            <p>
+              Alam mo, hindi ko rin alam kung kailan nagsimula. Maybe it was the little conversations, the random moments,
+               or simply the way you made ordinary days feel a little different.
+            I never planned on liking you. It just happened, 
+            slowly and unexpectedly.
+            </p>
+
+            <p>
+              And somewhere between those little moments,
+               I found myself smiling because of you.
+            </p>
+
+            <p>
+              Hindi ko alam kung ano ang magiging reaction mo after reading this, but 
+              I just wanted you to know that there's
+               someone who appreciates you a little more than you realize.
+            </p>
+
+             <p>
+              And that someone is me.
+            </p>
+
+            <p class="letter-ending">
+               I like you. More than I've ever had the courage to say. ♡
+            </p>
+
+          </article>
+
+          <button class="primary-button"
+                  data-page="3">
+            One Last Thing →
+          </button>
+
+        </div>
+
+        <button class="back-button"
+                data-page="1">
+          ← Go Back
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- PAGE 3: CONFESSION        -->
+    <!-- ========================= -->
+
+    <section class="story-page"
+             id="page3">
+
+      <div class="page-content">
+
+        <p class="eyebrow">
+          THIS IS THE LAST...
+        </p>
+
+        <p class="page-description">
+          I hope you'll read this
+          with an open heart.
+
+          And sana if ever you don't want it kalimutan mo na lang na may umamin sayo :>
+        </p>
+
+        <!-- DECORATIVE FLOWER -->
+        <div class="flower-decoration"
+             aria-hidden="true">
+          ✿
+        </div>
+
+        <!-- FINAL ENVELOPE -->
+        <div class="letter-scene">
+
+          <button class="interactive-envelope"
+                  id="finalEnvelope"
+                  aria-label="Open the confession letter"
+                  aria-expanded="false">
+
+            <span class="envelope-back"></span>
+            <span class="envelope-paper">
+              For Mark only ♡
+            </span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-front"></span>
+            <span class="envelope-seal">♡</span>
+
+          </button>
+
+        </div>
+
+        <p class="tap-hint" id="finalHint">
+          One final letter, just for you.
+        </p>
+
+        <!-- HIDDEN CONFESSION -->
+        <div class="letter-reveal"
+             id="finalLetter"
+             hidden>
+
+          <article class="letter-paper confession-paper">
+
+            <p class="letter-greeting">
+              Dear You,
+            </p>
+
+            <p>
+              I never really planned on
+              telling you this way.
+            </p>
+
+            <p>
+              Hindi ko talaga alam kong kelan nagsimula pero ang alam ko since day 1 of our college life naging crush kita
+              your always wearing a facemask and keeping a handsome face underneath, you were always with chena so i thought she was your girlfriend haha,
+              i didn't know na magpinsan pala kayo saka ko lang nalaman 
+              nong 2nd year na funny noh... But then as time's goes by nawala yong feelings na yon and di 
+              ko alam na babalik eventually, na realize kong crush pa rin pala kita after sabihin ni roschel ng ang pogi mo daw talaga well no doubt naman kasi pogi ka naman talaga
+              and mas lalo akong nafo fall sayo nong extension the way we have a little conversation yong mga simple tawanan and all..
+              Then nong naaksidente kami i super duper appreciate your care and then i start having delulu time na what if gusto mo din ako kahit na hindi naman, well delulu ngani haha
+            </p>
+
+            <h3 class="confession-title">
+             Gusto kita Mark Mayer:>
+             I really love calling you with your full name hehe..
+            </h3>
+
+            <p>
+             So ayun di ko na papahabain pa baka kasi ma bored ka na sa confession ko haha
+             Basta ayun gusto kita, and wag mo na lang sabihin sa tropa mo haha kasi mas bet nila si roschel for yahh ehh
+
+            </p>
+
+            <p>
+              I just wanted to be honest sa feelings ko
+              ayaw ko na kasing mag tago tago pa so better take the risk na lang 
+              manalo matalo atleast nasabi ko yong feelings ko..
+            </p>
+
+            <p>
+             After that iwas na lang ganon para di halata na umamin hihi...
+            </p>
+
+            <p>
+              Whatever happens after this,
+              I'm genuinely glad that
+              our paths crossed.
+            </p>
+
+            <p class="letter-signature">
+              With sincerity,<br>
+              Someone Who Admires You ♡
+            </p>
+
+            <p class="letter-signature"><br>
+               From JM♡
+            </p>
+
+          </article>
+
+          <button class="primary-button"
+                  data-page="1">
+            Back to the Beginning ↺
+          </button>
+
+        </div>
+
+        <button class="back-button"
+                data-page="2">
+          ← Go Back
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    Made with sincerity ♡
+  </footer>
+
+</body>
+</html>
